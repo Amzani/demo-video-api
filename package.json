@@ -1,0 +1,25 @@
+{
+  "name": "demo-video-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/Amzani/demo-video-api",
+  "author": "Samir AMZANI <samir.amzani@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Amzani/demo-video-api/issues"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.13.7",
+    "mongoose-type-url": "^1.0.2",
+    "yarn": "^1.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.13.2"
+  }
+}
