@@ -131,7 +131,6 @@ paths:
             - embedURL
             - sourceURL
             - viewsTotal
-            - status
       responses:
         200:
           description: A particular Video
@@ -182,7 +181,7 @@ definitions:
       _links:
         self:
           href: /
-        orders:
+        videos:
           href: /videos
 
   #
@@ -233,16 +232,12 @@ definitions:
 
         delete:
           href: /video/1234
-
-        profile:
-          href: https://adidas-group.com/gdm/OMS
-
+      id: 1234
       title: My Video title
       description : An example of a video description
       channel: samir
       embedURL: http://www.example.com/embed/1234
       viewsTotal: 555
-      status: published
 
 
   # Partial Video
@@ -257,6 +252,8 @@ definitions:
   video:
     type: object
     properties:
+      id:
+        type: string
       title:
         type: string
       description:
@@ -265,24 +262,25 @@ definitions:
         type: string
       embedURL:
         type: string
+        readOnly: true
       sourceURL:
         type: string
       viewsTotal:
         type: integer
-      status:
-        type: string
+        readOnly: true
     required:
       - title
       - description
       - channel
-      - status
+      - sourceURl
     example:
+      id: 1234
       title: My Video title
       description : An example of a video description
       channel: samir
       embedURL: http://www.example.com/embed/1234
+      sourceURL: http://techslides.com/demos/sample-videos/small.mp4
       viewsTotal: 555
-      status: published
 
 
   # Order Not Found Error
