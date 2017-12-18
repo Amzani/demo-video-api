@@ -111,26 +111,10 @@ paths:
         description: Id of the Video
         required: true
         type: string
-        x-example: '1234'
+        x-example: '5a37c635d0b9c242af40fcdc'
 
     get:
       summary: Retrieve Video
-      parameters:
-        - name: fields
-          in: query
-          description: Comma-separated list of fields to include in the response
-          required: false
-          type: array
-          items:
-            type: string
-          collectionFormat: csv
-          x-example:
-            - title
-            - description
-            - channel
-            - embedURL
-            - sourceURL
-            - viewsTotal
       responses:
         200:
           description: A particular Video
