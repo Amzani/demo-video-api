@@ -2,7 +2,7 @@
 
 var mongoose = require('mongoose'),
     hal = require("hal"),
-    Video = mongoose.model('Video');
+    Video = require('../models/VideoModel');
 
 
 exports.delete = function(req, res) {
