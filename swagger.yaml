@@ -111,7 +111,7 @@ paths:
         description: Id of the Video
         required: true
         type: string
-        x-example: '5a37c635d0b9c242af40fcdc'
+        x-example: '5a37c635d0b9c242af40fcda'
 
     get:
       summary: Retrieve Video
@@ -209,18 +209,18 @@ definitions:
     example:
       _links:
         self:
-          href: /video/1234
+          href: /video/5a37c635d0b9c242af40fcda
 
         edit:
-          href: /video/1234
+          href: /video/5a37c635d0b9c242af40fcda
 
         delete:
-          href: /video/1234
-      id: 1234
+          href: /video/5a37c635d0b9c242af40fcda
+      id: 5a37c635d0b9c242af40fcda
       title: My Video title
       description : An example of a video description
       channel: samir
-      embedURL: http://www.example.com/embed/1234
+      embedURL: http://www.example.com/embed/5a37c635d0b9c242af40fcda
       viewsTotal: 555
 
 
@@ -258,11 +258,11 @@ definitions:
       - channel
       - sourceURl
     example:
-      id: 1234
+      id: 5a37c635d0b9c242af40fcda
       title: My Video title
       description : An example of a video description
       channel: samir
-      embedURL: http://www.example.com/embed/1234
+      embedURL: http://www.example.com/embed/5a37c635d0b9c242af40fcda
       sourceURL: http://techslides.com/demos/sample-videos/small.mp4
       viewsTotal: 555
 
@@ -276,7 +276,7 @@ definitions:
       title: 'Not Found'
       detail: 'Cannot find the requested video'
       status: 404
-      instance: '/videos/1234'
+      instance: '/videos/5a37c635d0b9c242af40fcda'
 
   #
   # -- DO NOT EDIT BEYOND THIS POINT --
