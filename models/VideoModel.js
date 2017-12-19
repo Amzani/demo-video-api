@@ -1,9 +1,10 @@
 'use strict';
-var mongoose = require('mongoose');
+let mongoose = require('mongoose');
+let mongoosePaginate = require('mongoose-paginate');
 require('mongoose-type-url');
-var Schema = mongoose.Schema;
+let Schema = mongoose.Schema;
 
-var schemaOptions = {
+const schemaOptions = {
     toObject: {
       virtuals: true
     }
@@ -12,7 +13,7 @@ var schemaOptions = {
     }
 };
 
-var VideoSchema = new Schema({
+let VideoSchema = new Schema({
   title: {
     type: String,
     required: 'Kindly enter the title of the video'
@@ -50,5 +51,7 @@ VideoSchema.methods.toJSON = function() {
   delete obj.createdDate
   return obj
 }
+
+VideoSchema.plugin(mongoosePaginate);
 
 module.exports = mongoose.model('Video', VideoSchema);

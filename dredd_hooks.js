@@ -49,7 +49,7 @@ hooks.beforeEach(function (transaction, done) {
       hooks.log(video);
       done(err);
     }
-    hooks.log("saving video object : OK");
+    hooks.log("Saving video object : OK");
     done();
   });
 });
