@@ -30,3 +30,14 @@ exports.get = function(req, res) {
     }
   });
 };
+
+exports.patch = function(req, res) {
+  Video.findOneAndUpdate({_id: req.params.videoId}, req.body, {new: true}, function(err, video) {
+    if (err)
+      res.send(err);
+    var resource = new hal.Resource(video.toJSON(), '/video/' + video._id);
+    resource.link('edit', '/video/' + video._id);
+    resource.link('delete', '/video/' + video._id);
+    res.send(200, new Buffer(JSON.stringify(resource)));
+  });
+};
