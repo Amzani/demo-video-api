@@ -446,6 +446,10 @@ expand-range@^1.8.1:
   dependencies:
     fill-range "^2.1.0"
 
+express-content-type-override@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/express-content-type-override/-/express-content-type-override-1.1.0.tgz#8ac6edaab65dcaa67368cdfcc90cd116abc02b1d"
+
 express@^4.16.2:
   version "4.16.2"
   resolved "https://registry.yarnpkg.com/express/-/express-4.16.2.tgz#e35c6dfe2d64b7dca0a5cd4f21781be3299e076c"
@@ -660,6 +664,10 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
+hal@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/hal/-/hal-1.2.0.tgz#e3c879569c23c21e60abf971882b1c8d506d9df3"
+
 har-schema@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/har-schema/-/har-schema-1.0.5.tgz#d263135f43307c02c602afc8fe95970c0151369e"
@@ -695,6 +703,10 @@ hoek@2.x.x:
 hooks-fixed@2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/hooks-fixed/-/hooks-fixed-2.0.2.tgz#20076daa07e77d8a6106883ce3f1722e051140b0"
+
+hooks@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/hooks/-/hooks-0.3.2.tgz#a31f060c2026cea6cf1ca3eb178430e718e1c4a3"
 
 http-errors@1.6.2, http-errors@~1.6.2:
   version "1.6.2"

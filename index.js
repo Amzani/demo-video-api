@@ -2,14 +2,24 @@ var express = require('express'),
     app = express(),
     port = process.env.PORT || 80,
     mongoose = require('mongoose'),
-    Video = require('./models/VideoModel'), //created model loading here
     routes = require('./routes/VideoRoutes'),
     middlewares = require('./middlewares'),
     bodyParser = require('body-parser');
 
 express.static.mime.charsets.lookup=function(){}
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/VideoDB', { useMongoClient: true });
+
+if ('dredd' == process.env.NODE_ENV)
+{
+  mongoose.connect('mongodb://localhost/VideoTestDB', { useMongoClient: true });
+}
+else
+{
+  mongoose.connect('mongodb://localhost/VideoDB', { useMongoClient: true });
+}
+
+console.log('Test Mode:', process.env.NODE_ENV);
+
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
