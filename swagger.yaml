@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
   version: '1.0.0'
-  title: "[Play] Video 2 (API)"
+  title: "[Play] Video 3 (API)"
   description: |
     Video API is service you can use to create and share your videos.
 
