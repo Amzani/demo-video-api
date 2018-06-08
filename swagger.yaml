@@ -3,7 +3,7 @@ info:
   version: '1.0.0'
   title: "[Play] Video (API)"
   description: |
-    Video API is service you can use to create and share your videos.
+    Video API  2 is service you can use to create and share your videos.
 
     To create a video you have to upload a video asset first in any cdn or ftp server
     (this API dosn't support upload yet) then you have to provide a valid video URL.
